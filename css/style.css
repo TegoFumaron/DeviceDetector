@@ -68,7 +68,7 @@ body {
   }
 }
 
-@container (min-width: 1200px) {
+@container (min-width: 800px) {
   body {
     background: #d9d9d9;
   }
