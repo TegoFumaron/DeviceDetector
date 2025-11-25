@@ -14,7 +14,12 @@ body {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background: #b8a3d6;
 }
 
 #device-title {
@@ -41,7 +46,7 @@ body {
 }
 
 @container (min-width: 600px) {
-  body {
+  .device-status {
     background: #fff2a8;
   }
 
@@ -55,7 +60,7 @@ body {
 }
 
 @container (min-width: 900px) {
-  body {
+  .device-status {
     background: #c9f2c7;
   }
 
@@ -68,8 +73,8 @@ body {
   }
 }
 
-@container (min-width: 800px) {
-  body {
+@container (min-width: 1200px) {
+  .device-status {
     background: #d9d9d9;
   }
 
