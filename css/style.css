@@ -5,7 +5,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: system-ui, sans-serif;
-  background: #ffe7ec;
+  background: #b8a3d6;
   container-type: inline-size;
 }
 
@@ -41,7 +41,7 @@ body {
 
 @container (min-width: 600px) {
   body {
-    background: #e4f3ff;
+    background: #fff2a8;
   }
 
   #device-title::before {
@@ -55,7 +55,7 @@ body {
 
 @container (min-width: 900px) {
   body {
-    background: #e9ffe4;
+    background: #c9f2c7;
   }
 
   #device-title::before {
@@ -69,7 +69,7 @@ body {
 
 @container (min-width: 1200px) {
   body {
-    background: #eee6ff;
+    background: #d9d9d9;
   }
 
   #device-title::before {
