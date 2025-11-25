@@ -1,0 +1,82 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: system-ui, sans-serif;
+  background: #ffe7ec;
+  container-type: inline-size;
+}
+
+.device-status {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#device-title {
+  font-size: 3rem;
+  text-transform: uppercase;
+  visibility: hidden;
+  position: relative;
+}
+
+#device-title::before {
+  content: "phone";
+  visibility: visible;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#device-icon {
+  width: 140px;
+  height: 140px;
+  background: no-repeat center/100% url("../img/phone-icon.svg");
+}
+
+@container (min-width: 600px) {
+  body {
+    background: #e4f3ff;
+  }
+
+  #device-title::before {
+    content: "tablet";
+  }
+
+  #device-icon {
+    background-image: url("../img/tablet-icon.svg");
+  }
+}
+
+@container (min-width: 900px) {
+  body {
+    background: #e9ffe4;
+  }
+
+  #device-title::before {
+    content: "laptop";
+  }
+
+  #device-icon {
+    background-image: url("../img/laptop-icon.svg");
+  }
+}
+
+@container (min-width: 1200px) {
+  body {
+    background: #eee6ff;
+  }
+
+  #device-title::before {
+    content: "desktop";
+  }
+
+  #device-icon {
+    background-image: url("../img/desktop-icon.svg");
+  }
+}
